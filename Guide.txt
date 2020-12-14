@@ -1,4 +1,7 @@
-I remember you mentioning you wanted drop down menu's for improved user experience. However, with the time constraint there were more pressing issues I wanted to make sure I had added before deploying. The Champion Page displays champions as such "Alistar - Known as the Minotaur	A Melee and Magical champion." When Creating your own Custom List for Champion name, you will want to put in Alister for example. And then the same thing with the items. The easiest way at the moment is to just copy an Equipment's/Champion's name onto a text document, and then into the respective field in the Create List Form.
+I remember you mentioning you wanted drop down menu's for improved user experience. However, with the time constraint there were more pressing issues 
+I wanted to make sure I had added before deploying. The Champion Page displays champions as such "Alistar - Known as the Minotaur	A Melee and Magical champion." 
+When Creating your own Custom List for Champion name, you will want to put in Alister for example. And then the same thing with the items. 
+The easiest way at the moment is to just copy an Equipment's/Champion's name onto a text document, and then into the respective field in the Create List Form.
 
 Here is a list of the champion names and equipment names for ease of use/testing:
 
