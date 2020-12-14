@@ -1,0 +1,17 @@
+<h2>Create a new Custom List</h2>
+
+<form name="form1" (ngSubmit)="onSubmit()">
+  <div>
+    <p>First you're going to decide a name for the build</p>
+    <label for="name">
+      Custom List Name:
+    </label>
+    <input id="name" name="name" type="text" [(ngModel)]="name" />
+    <p>Now you're going to decide which Champion this build is for</p>
+    <label for="championName">
+      Champion Name:
+    </label>
+    <input id="chamionName" name="chamionName" type="text" [(ngModel)]="championName" />
+  </div>
+  <button type="submit">Create New Custom List</button>
+</form>

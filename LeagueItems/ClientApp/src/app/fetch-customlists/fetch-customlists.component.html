@@ -1,0 +1,22 @@
+<h1 id="tableLabel">Custom Lists</h1>
+<p *ngIf="!customLists"><em>Loading...</em></p>
+<div *ngIf="customLists">
+  <div class="content-box" *ngFor="let customList of customLists">
+    <h3>{{customList.name}}</h3><p>Build for {{customList.championName}}</p>
+    <p>Item 1: {{customList.equipmentName1}}</p>
+    <p>Item 2: {{customList.equipmentName2}}</p>
+    <p>Item 3: {{customList.equipmentName3}}</p>
+    <p>Item 4: {{customList.equipmentName4}}</p>
+    <p>Item 5: {{customList.equipmentName5}}</p>
+    <p>Item 6: {{customList.equipmentName6}}</p>
+    <div class="buttons-container">
+      <a routerLink="/edit-customlist/{{customList.listId}}">
+        <button>Edit</button>
+      </a>
+    </div>
+  </div>
+</div>
+<a routerLink="/new-customlist">
+  <button>Create New Custom List</button>
+</a>
+

@@ -1,0 +1,26 @@
+<h1 id="tableLabel">Equipment</h1>
+
+<p>Here is a list of the Equipment availiable.</p>
+
+<p *ngIf="!equipments"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="equipments">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Stats</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let equipment of equipments">
+      <td>{{ equipment.equipmentId }}</td>
+      <td>{{ equipment.name }}</td>
+      <td>{{ equipment.description }}</td>
+      <td>{{ equipment.stats }}</td>
+      <td>{{ equipment.cost }}</td>
+    </tr>
+  </tbody>
+</table>

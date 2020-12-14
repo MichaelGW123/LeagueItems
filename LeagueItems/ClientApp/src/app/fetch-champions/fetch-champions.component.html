@@ -1,0 +1,7 @@
+<h1 id="tableLabel">Champions</h1>
+<p *ngIf="!champions"><em>Loading...</em></p>
+<div *ngIf="champions">
+  <div class="content-box" *ngFor="let champion of champions">
+    <h3>{{champion.name}} - Known as{{champion.description}}</h3><p>A {{champion.attacktype}} and {{champion.damagetype}} champion.</p> 
+  </div>
+</div>

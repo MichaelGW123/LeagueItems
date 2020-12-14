@@ -1,0 +1,18 @@
+<form class="form" [formGroup]="registerForm">
+  <div>
+    <label for="name">
+      Username:
+    </label>
+    <input formControlName="email" type="text" />
+  </div>
+  <div>
+    <label for="password">
+      Password:
+    </label>
+    <input formControlName="password" type="password" />
+  </div>
+  <div class="form-footer">
+    <button (click)="createUser()">Create a User</button>
+    <a routerLink="/login">Go to Login</a>
+  </div>
+</form>

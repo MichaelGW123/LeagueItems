@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-authentication-t-e618f": {
+      "hosting": {
+        "LeagueItems": [
+          "angular-authentication-t-e618f"
+        ]
+      }
+    }
+  }
+}

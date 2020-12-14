@@ -1,0 +1,27 @@
+<h1 id="tableLabel">Edit Custom List</h1>
+<p *ngIf="!customList"><em>Loading...</em></p>
+<div *ngIf="customList">
+  <div class="content-box">
+    <h3>{{customList.name}}</h3><p>Build for {{customList.championName}}</p>
+                                <p>
+                                  <span style="display:inline-block; width: 50px;"></span>Current Equipment <span style="display:inline-block; width: 100px;"></span> New Equipment
+                                </p>
+    <p>Item 1: {{customList.equipmentName1}}<span style="display:inline-block; width: 150px;"></span>
+    <input id="equipName1" name="equipName1" type="text" [(ngModel)]="equipName1" />
+    <p>Item 2: {{customList.equipmentName2}}<span style="display:inline-block; width: 150px;"></span>
+    <input id="equipName2" name="equipName2" type="text" [(ngModel)]="equipName2" />
+    <p>Item 3: {{customList.equipmentName3}}<span style="display:inline-block; width: 150px;"></span>
+    <input id="equipName3" name="equipName3" type="text" [(ngModel)]="equipName3" />
+    <p>Item 4: {{customList.equipmentName4}}<span style="display:inline-block; width: 150px;"></span>
+    <input id="equipName4" name="equipName4" type="text" [(ngModel)]="equipName4" />
+    <p>Item 5: {{customList.equipmentName5}}<span style="display:inline-block; width: 150px;"></span>
+    <input id="equipName5" name="equipName5" type="text" [(ngModel)]="equipName5" />
+    <p>Item 6: {{customList.equipmentName6}}<span style="display:inline-block; width: 150px;"></span>
+    <input id="equipName6" name="equipName6" type="text" [(ngModel)]="equipName6" />
+  </div>
+</div>
+<a routerLink="/fetch-customlist">
+  <button>Back</button>
+</a>
+<button (click)="deleteCustomList()">Delete Custom List</button>
+<button (click)="saveCustomList()">Save Custom List</button>
